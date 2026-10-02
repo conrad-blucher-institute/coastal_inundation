@@ -1,4 +1,4 @@
-lead_hrs,dropout,test_var
+lead_hrs,dropout,neurons
 6,.15,2
 12,.1,4
 18,.1,8
