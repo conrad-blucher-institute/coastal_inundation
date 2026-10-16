@@ -1,0 +1,18 @@
+setting,value,notes
+location,Six Mile Park,name shown in the report
+train_files,SixMilePark2022_wl_u_vwind_6min.csv;Port_O_Connor_2022.csv,"training data files, separated by ;"
+val_files,SixMilePark2023_wl_u_vwind_6min.csv;Port_O_Connor_2023.csv,"validation data files, separated by ;"
+lead_hrs,6;12;18;24;48,"lead times to train, separated by ;"
+rain,off,off | reported | to_now | perfprog
+rain_future_hrs,0,"perfprog only (max 18, never past the lead time); 0 otherwise"
+poc,yes,use Port O'Connor water level: yes | no
+gap_fill_hrs,0,fill gaps up to this many hours (0 = off)
+lookback_hrs,24,hours of past data the model sees
+layers,1,hidden layers
+neurons,20,neurons per hidden layer
+dropout,0.15;0.1;0.1;0.2;0.15,"one value, or one per lead time"
+activation,relu,relu | tanh | sigmoid
+epochs,10000,max epochs (early stopping ends sooner)
+patience,50,early stopping patience
+n_models,3,models per lead time; the report shows each one and their average
+seed,42,"seed of model 1; model 2 uses seed+1, and so on"
