@@ -10,7 +10,7 @@ gap_fill_hrs,0,fill gaps up to this many hours (0 = off)
 lookback_hrs,24,hours of past data the model sees
 layers,1,hidden layers
 neurons,20,neurons per hidden layer
-dropout,0.15;0.1;0.1;0.2;0.15,"one value, or one per lead time"
+dropout,0.15;0.1,"one value, or one per lead time"
 activation,relu,relu | tanh | sigmoid
 epochs,2,max epochs (early stopping ends sooner)
 patience,50,early stopping patience
