@@ -2,7 +2,7 @@ setting,value,notes
 location,Port Lavaca,name shown in the report
 train_files,PortLavaca2022(fixed)_just_wl_u_vwind_6min.csv;Port_O_Connor_2022.csv,"training data files, separated by ;"
 val_files,PortLavaca2023(fixed)_just_wl_u_vwind_6min.csv;Port_O_Connor_2023.csv,"validation data files, separated by ;"
-lead_hrs,6;12;18;24;48,"lead times to train, separated by ;"
+lead_hrs,6;12;18;24,"lead times to train, separated by ;"
 rain,off,off | reported | to_now | perfprog
 rain_future_hrs,0,"perfprog only (max 18, never past the lead time); 0 otherwise"
 poc,yes,use Port O'Connor water level: yes | no
