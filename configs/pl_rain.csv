@@ -7,7 +7,10 @@ lead_hrs,6;12;18;24;48,"lead times to train, separated by ;"
 rain,perfprog,off | reported | to_now | perfprog
 rain_future_hrs,18,"perfprog only (max 18, never past the lead time); 0 otherwise"
 poc,no,use Port O'Connor water level: yes | no
-gap_fill_hrs,0,fill gaps up to this many hours (0 = off)
+train_gap_fill,0,training data: fill gaps up to this many hours (0 = off)
+val_gap_fill,0,validation data: fill gaps up to this many hours (0 = off)
+test_gap_fill,0,testing data: fill gaps up to this many hours (0 = off)
+normalize,no,"scale inputs using the training rows, saved in the model: yes | no"
 lookback_hrs,24,hours of past data the model sees
 layers,1,hidden layers
 neurons,20,neurons per hidden layer
